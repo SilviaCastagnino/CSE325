@@ -20,29 +20,31 @@ As required by the assignment, an **additional initial record** was appended to 
 **Request:**
 POST {{ContosoPizza_HostAddress}}/pizza/
 Content-Type: application/json
-
+```json
 {
     "name": "Hawaii",
     "isGlutenFree": false
 }
-
+```
 **Response:**
+```json
 {
   "id": 3,
   "name": "Hawaii",
   "isGlutenFree": false
 }
+```
 #### 2. PUT - Update the newly created Pizza
 **Request:**
 PUT {{ContosoPizza_HostAddress}}/pizza/7
 Content-Type: application/json
-
+```json
 {
     "id": 3,
     "name": "Hawaiian",
     "isGlutenFree": false
 }
-
+```
 **Response:**
 (The update was successful and the resource was modified)
 
@@ -52,12 +54,13 @@ GET {{ContosoPizza_HostAddress}}/pizza/3
 Accept: application/json
 
 **Response:**
+```json
 {
   "id": 3,
   "name": "Hawaiian",
   "isGlutenFree": false
 }
-
+```
 #### 4. DELETE - Remove the Pizza
 **Request:**
 DELETE {{ContosoPizza_HostAddress}}/pizza/3
@@ -71,6 +74,7 @@ GET {{ContosoPizza_HostAddress}}/pizza/
 Accept: application/json
 
 **Response:**
+```json
 [
   {
     "id": 1,
@@ -83,7 +87,7 @@ Accept: application/json
     "isGlutenFree": true
   }
 ]
-
+```
 
 ## Project 2: Sales Summary
 ### Location
@@ -99,7 +103,7 @@ Sales Summary
  Total Sales: $2,012.20
 
  Details:
- 
+
   sales.json: $88.88
 
   sales.json: $501.22
