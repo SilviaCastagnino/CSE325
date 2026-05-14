@@ -42,6 +42,7 @@ Content-Type: application/json
     "name": "Hawaiian",
     "isGlutenFree": false
 }
+
 **Response:**
 (The update was successful and the resource was modified)
 
@@ -98,12 +99,21 @@ Sales Summary
  Total Sales: $2,012.20
 
  Details:
+ 
   sales.json: $88.88
+
   sales.json: $501.22
+
   salestotals.json: $0.00
+
   sales.json: $1,234.22
+
   salestotals.json: $0.00
+
   sales.json: $99.00
+
   salestotals.json: $0.00
+
   sales.json: $88.88
+
   salestotals.json: $0.00
